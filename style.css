@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090b0f;
+}
+
+/*Corpo da Calculadora*/
+
+.calculatorBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.813rem;
+    height: 32rem;
+    border-radius: 2rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    outline: solid 1px #fff;
+    background-color: #292C39;
+    box-shadow: 0.125rem 0.5rem 0.625rem rgba(0, 0, 0, 0.219);
+}
+
+/*Output de Resultados*/
+
+.results {
+    width: 31.813rem;
+    height: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background-image: linear-gradient(to right, #9CA095, #868B7D);
+}
+
+.resultsPrevious {
+    width: 31.813rem;
+    height: 4.25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding-right: 1.5rem;
+    @font-face {
+        font-family: 'Calculator';
+        src: url('Calculator.ttf') format('truetype');
+    }
+    font-family: 'Calculator';
+    font-size: 2.5rem;
+}
+
+.resultsCurrent {
+    width: 31.813rem;
+    height: 4.25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding-right: 1.5rem;
+    @font-face {
+        font-family: 'Calculator';
+        src: url('Calculator.ttf') format('truetype');
+    }
+    font-family: 'Calculator';
+    font-size: 4.5rem;
+}
+
+/*Botões de Números e Operações*/
+
+.buttons {
+    width: 31.813rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listNumberButtons {
+    width: 18.875rem;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.lastLine > .numberButton {
+    margin-right: 0.725rem;
+}
+
+.numberButton {
+    width: 5.625rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #1B1D26;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.459);
+}
+
+.numberButton:hover {
+    background-color: #2F3242 ;
+}
+
+.lineOperateButtons {
+    margin-bottom: 1rem;
+}
+
+.operateButton {
+    width: 5.625rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background-color: #B8B8C1;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    color: #fff;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.459);
+}
+
+.operateButton:hover {
+    background-color: #d6d6d6;
+}
+
+.plusOperateButton {
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 2rem;
+    background-color: #3DDAD5;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #fff;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.459);
+}
+
+.plusOperateButton:hover {
+    background-color: #64fffa;
+}
+
+.equalOperateButton {
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 2rem;
+    background-color: #F5DB15;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #fff;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.459);
+}
+
+.equalOperateButton:hover {
+    background-color: #ffeb52;
+}
